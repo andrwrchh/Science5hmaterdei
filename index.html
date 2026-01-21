@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synthèses de Sciences</title>
+    <link rel="stylesheet" href="accueil.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="nav">
+        <div class="nav-left">
+            <div class="logo">SCIENCES</div>
+        </div>
+
+        <button class="nav-toggle" id="navToggle">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html">Accueil</a>
+            <a href="electricite.html">Électricité</a>
+            <a href="photosyn.html">Photosynthèse</a>
+            <a href="suggestions.html">Suggestions</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Comprendre les sciences<br><span>simplement et efficacement</span></h1>
+        <p>Des synthèses claires, modernes et élégantes pour réviser plus vite.</p>
+    </section>
+
+    <!-- GRID -->
+    <section class="subjects">
+
+        <a href="electricite.html" class="subject-card">
+            <div class="icon">⚡</div>
+            <h2>Électricité</h2>
+            <p>Circuits, intensité, tension</p>
+        </a>
+
+        <a href="photosyn.html" class="subject-card">
+            <div class="icon">🌿</div>
+            <h2>Photosynthèse</h2>
+            <p>Énergie, lumière, chlorophylle</p>
+        </a>
+
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>À propos</h3>
+            <p>
+                Ce site a été conçu pour offrir des explications claires et accessibles 
+                en sciences. Vos retours permettent de l’améliorer continuellement.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="electricite.html">Électricité</a></li>
+                <li><a href="photosyn.html">Photosynthèse</a></li>
+                <li><a href="suggestions.html">Suggestions</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Une erreur ? Une idée ?</p>
+            <p><a href="suggestions.html" class="footer-btn">Envoyer une suggestion</a></p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 — Site éducatif • Fait par Andrew
+    </div>
+</footer>
+
+    <script>
+        const navToggle = document.getElementById("navToggle");
+        const navMenu = document.getElementById("navMenu");
+
+        navToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("open");
+            navToggle.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>

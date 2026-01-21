@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Suggestions</title>
+    <link rel="stylesheet" href="suggestions.css">
+</head>
+<body>
+    <header class="nav">
+  <div class="nav-inner">
+    <div class="logo">SCIENCES</div>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html">Accueil</a>
+      <a href="electricite.html">Électricité</a>
+      <a href="photosyn.html">Photosynthèse</a>
+      <a href="suggestions.html">Suggestions</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+
+<main>
+    <section class="summary-banner">
+        <div class="summary-tagline">Suggestions & corrections :</div>
+        <p>
+            Si vous remarquez la moindre erreur ou imprécision dans se site
+            merci de la noter ci-dessous afin que je puisse la corriger.
+        </p>
+        <form id="suggestion-form">
+            <iframe src="https://forms.gle/TB9JKxcoPdGkVRw47" width="100%" height="800" frameborder="0">Chargement…</iframe>
+        </form>
+        <div id="suggestion-message" style="display:none; margin-top:12px; padding:12px; border-radius:12px; background:rgba(76,255,155,0.2); color:var(--text-main); font-weight:600;">
+            Merci pour votre suggestion ! Elle sera corrigée rapidement.
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>À propos</h3>
+            <p>
+                Ce site a été conçu pour offrir des explications claires et accessibles 
+                en sciences. Vos retours permettent de l’améliorer continuellement.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="electricite.html">Électricité</a></li>
+                <li><a href="photosyn.html">Photosynthèse</a></li>
+                <li><a href="suggestions.html">Suggestions</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Une erreur ? Une idée ?</p>
+            <p><a href="suggestions.html" class="footer-btn">Envoyer une suggestion</a></p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 — Site éducatif • Fait par Andrew
+    </div>
+</footer>
+
+<script src="suggestions.js"></script>
+
+</body>
+</html>

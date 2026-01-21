@@ -1,0 +1,254 @@
+@font-face {
+  font-family: Oughter;
+  src: url(Oughter.otf);
+}
+
+:root {
+    --color-main: #9e4ae2;
+    --color-accent: #4cff9b;
+    --bg-main: #1a1a1f;
+    --text-main: #ddd;
+    --menu-bg: rgba(0,0,0,0.8);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+    background: radial-gradient(circle at top left, #15213b 0, #050816 55%, #02030a 100%);
+    color: var(--text-main);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 18px 40px;
+}
+
+
+/* Main Content */
+main {
+    padding: 80px 20px 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.summary-banner {
+    background-color: #222; 
+    color: #eee;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+
+.summary-tagline {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--color-accent);
+}
+
+.summary-banner p {
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+iframe {
+    border-radius: 12px;
+    border: 2px solid #444;
+}
+
+/* Confirmation Message */
+#suggestion-message {
+    transition: 0.3s;
+}
+
+
+
+
+
+
+.site-footer {
+    background: #1a1a1f;
+    color: #ddd;
+    padding: 40px 20px 20px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-section h3 {
+    color: var(--color-accent);
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.footer-section p {
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 6px 0;
+}
+
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-section a:hover {
+    color: var(--color-accent);
+}
+
+.footer-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 14px;
+    background: var(--color-main);
+    color: white !important;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.footer-btn:hover {
+    background: var(--color-accent);
+    color: #000 !important;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    color: #aaa;
+}
+
+
+
+/* NAVBAR BASE */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #141418;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+.logo {
+  font-family: Oughter;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Desktop menu */
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.nav-menu a {
+    color: #e6e6e6;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.nav-menu a:hover {
+    color: #36d321;
+}
+
+/* Hamburger button (hidden on desktop) */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 3px;
+}
+
+/* ------------------------------ */
+/* MOBILE MODE */
+/* ------------------------------ */
+
+@media (max-width: 900px) {
+
+    /* Show hamburger */
+    .nav-toggle {
+        display: flex;
+    }
+
+    /* Hide menu by default */
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 8%;
+        background: #141418;
+        padding: 20px;
+        border-radius: 12px;
+        flex-direction: column;
+        gap: 20px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    }
+
+    /* When opened */
+    .nav-menu.open {
+        display: flex;
+    }
+}

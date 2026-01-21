@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Résumé – Notions d'électricité</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+<body>
+ 
+    <header class="nav">
+        <div class="nav-left">
+            <div class="logo">SCIENCES</div>
+        </div>
+
+        <button class="nav-toggle" id="navToggle">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html">Accueil</a>
+            <a href="electricite.html">Électricité</a>
+            <a href="photosyn.html">Photosynthèse</a>
+            <a href="suggestions.html">Suggestions</a>
+        </nav>
+    </header>
+
+
+
+<main class="page">
+    <header class="header">
+      <div class="title-block">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span>Électricité – Fiche de synthèse</span>
+        </div>
+        <h1>Notions essentielles d’électricité</h1>
+        <p class="subtitle">
+          Vue globale des charges, du courant, des circuits et des grandeurs fondamentales
+          (intensité, tension, résistance, puissance, énergie) avec un rappel sécurité.
+        </p>
+      </div>
+      <div class="meta">
+        <div class="meta-chip">Niveau : 3ème 5h Science Mater Dei</div>
+        <div class="meta-row">
+          <div class="meta-pill">Thème : circuits électriques</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="summary-banner">
+      <div class="summary-tagline">En un coup d’œil :</div>
+      <div class="summary-items">
+        <div class="summary-chip">Charges : + / − qui s’attirent ou se repoussent</div>
+        <div class="summary-chip">Courant : électrons qui se déplacent</div>
+        <div class="summary-chip">Loi d’Ohm : U = R · I</div>
+        <div class="summary-chip">Puissance : P = U · I</div>
+        <div class="summary-chip">Sécurité : attention aux courts-circuits</div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <!-- Colonne gauche -->
+      <div class="column">
+        <!-- 1. Charges électriques -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-index">01</span>
+              Charges électriques
+            </div>
+            <span class="card-tag">Interactions fondamentales</span>
+          </div>
+          <div class="card-content">
+            <p>
+              Il existe deux types de charges électriques : <strong>positives</strong> et
+              <strong>négatives</strong>.
+            </p>
+            <ul class="card-list">
+              <li><span><strong>Même signe :</strong> les corps se repoussent.</span></li>
+              <li><span><strong>Signes contraires :</strong> les corps s’attirent.</span></li>
+            </ul>
+            <p>
+              La force électrique peut donc être
+              <strong>attractive</strong> (les corps s’attirent) ou
+              <strong>répulsive</strong> (les corps se repoussent).
+            </p>
+          </div>
+        </article>
+
+        <!-- 2. Éléments d’un circuit -->
+        <!-- 2. Éléments d’un circuit (avec logos) -->
+<article class="card">
+  <div class="card-header">
+    <div class="card-title">
+      <span class="card-index">02</span>
+      Éléments d’un circuit
+    </div>
+    <span class="card-tag">Symboles & composants</span>
+  </div>
+
+  <div class="card-content">
+    <p>Un circuit électrique peut être constitué de plusieurs éléments :</p>
+
+    <ul class="card-list">
+
+      <!-- Générateur -->
+      <li>
+        <span>
+          <svg width="26" height="16" viewBox="0 0 50 20" style="margin-right:6px;">
+            <line x1="0" y1="10" x2="18" y2="10" stroke="#4f9dff" stroke-width="2"/>
+            <line x1="18" y1="4" x2="18" y2="16" stroke="#4f9dff" stroke-width="2"/>
+            <line x1="26" y1="6" x2="26" y2="14" stroke="#4f9dff" stroke-width="2"/>
+            <line x1="26" y1="10" x2="50" y2="10" stroke="#4f9dff" stroke-width="2"/>
+          </svg>
+          <strong>Générateur</strong> (pile, alimentation…)
+        </span>
+      </li>
+
+      <!-- Ampoule -->
+      <li>
+        <span>
+          <svg width="22" height="22" viewBox="0 0 24 24" style="margin-right:6px;">
+            <circle cx="12" cy="12" r="8" stroke="#4f9dff" stroke-width="2" fill="none"/>
+            <line x1="4" y1="12" x2="0" y2="12" stroke="#4f9dff" stroke-width="2"/>
+            <line x1="24" y1="12" x2="20" y2="12" stroke="#4f9dff" stroke-width="2"/>
+          </svg>
+          <strong>Ampoule</strong>
+        </span>
+      </li>
+
+      <li>
+  <span>
+    <svg width="22" height="22" viewBox="0 0 24 24" style="margin-right:6px;">
+      <!-- Définition des têtes de flèches -->
+      <defs>
+        <marker id="arrowhead" 
+                markerWidth="4" 
+                markerHeight="4" 
+                refX="0" 
+                refY="2" 
+                orient="auto"
+                markerUnits="strokeWidth">
+          <path d="M0,0 L4,2 L0,4 Z" fill="#4f9dff" />
+        </marker>
+      </defs>
+
+      <!-- LED diode triangle -->
+      <polygon points="6,8 14,12 6,16" fill="none" stroke="#4f9dff" stroke-width="2"/>
+      <!-- Cathode line -->
+      <line x1="14" y1="8" x2="14" y2="16" stroke="#4f9dff" stroke-width="2"/>
+      <!-- Leads -->
+      <line x1="2" y1="12" x2="6" y2="12" stroke="#4f9dff" stroke-width="2"/>
+      <line x1="14" y1="12" x2="22" y2="12" stroke="#4f9dff" stroke-width="2"/>
+      <!-- Large noticeable light arrows with heads -->
+      <line x1="16" y1="6" x2="22" y2="0" 
+            stroke="#4f9dff" stroke-width="2" 
+            marker-end="url(#arrowhead)"/>
+      <line x1="16" y1="10" x2="22" y2="4" 
+            stroke="#4f9dff" stroke-width="2" 
+            marker-end="url(#arrowhead)"/>
+    </svg>
+    <strong>LED</strong>
+  </span>
+</li>
+
+
+
+      <!-- Résistor -->
+      <li>
+        <span>
+          <svg width="40" height="14" viewBox="0 0 60 20" style="margin-right:6px;">
+            <line x1="0" y1="10" x2="10" y2="10" stroke="#4f9dff" stroke-width="2"/>
+            <polyline points="10,10 15,4 20,16 25,4 30,16 35,4 40,16 45,10" 
+                      fill="none" stroke="#4f9dff" stroke-width="2"/>
+            <line x1="45" y1="10" x2="60" y2="10" stroke="#4f9dff" stroke-width="2"/>
+          </svg>
+          <strong>Résistor</strong>
+        </span>
+      </li>
+
+      <!-- Interrupteur ouvert -->
+      <li>
+        <span>
+          <svg width="40" height="20" viewBox="0 0 50 20" style="margin-right:6px;">
+            <line x1="0" y1="10" x2="20" y2="10" stroke="#4f9dff" stroke-width="2"/>
+            <line x1="20" y1="10" x2="35" y2="4" stroke="#4f9dff" stroke-width="2"/>
+            <circle cx="20" cy="10" r="2" fill="#4f9dff"/>
+            <circle cx="40" cy="10" r="2" fill="#4f9dff"/>
+            <line x1="40" y1="10" x2="50" y2="10" stroke="#4f9dff" stroke-width="2"/>
+          </svg>
+          <strong>Interrupteur ouvert</strong>
+        </span>
+      </li>
+
+      <!-- Interrupteur fermé -->
+      <li>
+        <span>
+          <svg width="40" height="20" viewBox="0 0 50 20" style="margin-right:6px;">
+            <line x1="0" y1="10" x2="20" y2="10" stroke="#4f9dff" stroke-width="2"/>
+            <line x1="20" y1="10" x2="40" y2="10" stroke="#4f9dff" stroke-width="2"/>
+            <circle cx="20" cy="10" r="2" fill="#4f9dff"/>
+            <circle cx="40" cy="10" r="2" fill="#4f9dff"/>
+            <line x1="40" y1="10" x2="50" y2="10" stroke="#4f9dff" stroke-width="2"/>
+          </svg>
+          <strong>Interrupteur fermé</strong>
+        </span>
+      </li>
+
+      <!-- Moteur -->
+      <li>
+        <span>
+          <svg width="26" height="26" viewBox="0 0 24 24" style="margin-right:6px;">
+            <circle cx="12" cy="12" r="8" stroke="#4f9dff" stroke-width="2" fill="none"/>
+            <text x="12" y="16" font-size="10" text-anchor="middle" fill="#4f9dff">M</text>
+          </svg>
+          <strong>Moteur</strong>
+        </span>
+      </li>
+
+    </ul>
+
+    <p>
+      Chaque élément possède un <strong>symbole électrique normalisé</strong>,
+      identique dans tous les pays.
+    </p>
+  </div>
+</article>
+
+        <!-- 3. Courant électrique -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-index">03</span>
+              Courant électrique
+            </div>
+            <span class="card-tag">Sens & définition</span>
+          </div>
+          <div class="card-content">
+            <p>
+              Un courant électrique est un <strong>déplacement ordonné des électrons libres</strong>
+              dans un conducteur.
+            </p>
+            <ul class="card-list">
+              <li>
+                <span>
+                  <strong>Sens conventionnel :</strong> de la borne
+                  <strong>positive (+)</strong> vers la borne <strong>négative (−)</strong>.
+                </span>
+              </li>
+              <li>
+                <span>
+                  <strong>Sens réel des électrons :</strong> de la borne
+                  <strong>négative (−)</strong> vers la borne <strong>positive (+)</strong>.
+                </span>
+              </li>
+            </ul>
+            <p>
+              Un composant possédant deux bornes est appelé un
+              <strong>dipôle</strong>.
+            </p>
+          </div>
+        </article>
+
+        <!-- 4. Générateur -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-index">04</span>
+              Générateur
+            </div>
+            <span class="card-tag">Source d’énergie</span>
+          </div>
+          <div class="card-content">
+            <p>
+              Un générateur est un dispositif qui <strong>produit de l’électricité</strong>.
+            </p>
+            <p>
+              Il transforme une autre forme d’énergie (chimique, mécanique…) en
+              <strong>énergie électrique</strong>.
+            </p>
+          </div>
+        </article>
+
+        <!-- 5. Récepteurs -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-index">05</span>
+              Récepteurs électriques
+            </div>
+            <span class="card-tag">Conversion d’énergie</span>
+          </div>
+          <div class="card-content">
+            <p>
+              Un récepteur électrique reçoit l’énergie électrique et la transforme
+              en une ou plusieurs autres formes d’énergie :
+            </p>
+            <ul class="card-list">
+              <li><span><strong>Énergie lumineuse :</strong> ampoule, LED</span></li>
+              <li><span><strong>Énergie thermique :</strong> résistor</span></li>
+              <li><span><strong>Énergie mécanique :</strong> moteur</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 6. Fils & interrupteur -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-index">06</span>
+              Fils & interrupteur
+            </div>
+            <span class="card-tag">Conduction & commande</span>
+          </div>
+          <div class="card-content">
+            <p>
+              Les fils électriques sont généralement en métal, le plus souvent en
+              <strong>cuivre</strong>, car c’est un <strong>bon conducteur</strong>.
+            </p>
+            <p>L’interrupteur permet de :</p>
+            <ul class="card-list">
+              <li><span><strong>Ouvrir le circuit :</strong> le courant ne circule pas.</span></li>
+              <li><span><strong>Fermer le circuit :</strong> le courant circule.</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 7. Conditions de circulation du courant -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-index">07</span>
+              Conditions de circulation
+            </div>
+            <span class="card-tag">Circuit fermé</span>
+          </div>
+          <div class="card-content">
+            <p>Pour que le courant électrique circule, il faut :</p>
+            <ul class="card-list">
+              <li><span><strong>Un générateur</strong></span></li>
+              <li><span><strong>Des fils conducteurs</strong></span></li>
+              <li><span><strong>Au moins un récepteur</strong></span></li>
+              <li><span><strong>Un circuit fermé</strong> (sans coupure)</span></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <!-- Colonne droite -->
+      <div class="column">
+        <!-- 8. Intensité -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-index">08</span>
+              Intensité du courant I
+            </div>
+            <span class="card-tag">Charge / temps</span>
+          </div>
+          <div class="card-content">
+            <p>
+              La charge électrique est notée <strong>q</strong> et s’exprime en
+              <strong>coulomb (C)</strong>.
+            </p>
+            <div class="formula">
+              <span class="label">Intensité</span>
+              <span>I = q / Δt</span>
+            </div>
+            <p>
+              L’intensité <strong>I</strong> correspond à la quantité de charge qui
+              traverse une section du circuit pendant un certain temps.
+            </p>
+            <p>
+              Unité : <strong>ampère (A)</strong>, avec
+              <strong>1 A = 1 C / s</strong>.
+            </p>
+            <p>
+              Instrument de mesure : <strong>ampèremètre</strong>
+              <span class="card-highlight">connexion en série</span>
+            </p>
+            <p><strong>Lois de l’intensité :</strong></p>
+            <ul class="card-list">
+              <li><span><strong>Circuit en série :</strong> I est la même en tout point.</span></li>
+              <li><span><strong>Circuit en parallèle :</strong> I fournie par le générateur = somme des intensités dans chaque branche.</span></li>
+              <li><span><strong>Loi des nœuds :</strong> somme des intensités entrantes = somme des intensités sortantes.</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 9. Tension -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-index">09</span>
+              Tension électrique U
+            </div>
+            <span class="card-tag">Énergie / charge</span>
+          </div>
+          <div class="card-content">
+            <p>
+              La tension électrique représente l’<strong>énergie fournie par unité de charge</strong>.
+            </p>
+            <div class="formula">
+              <span class="label">Tension</span>
+              <span>U = E / q</span>
+            </div>
+            <p>
+              Unité : <strong>volt (V)</strong> avec
+              <strong>1 V = 1 J / C</strong>.
+            </p>
+            <p>
+              Instrument de mesure : <strong>voltmètre</strong>
+              <span class="card-highlight">connexion en parallèle</span>
+            </p>
+            <p><strong>Lois de la tension :</strong></p>
+            <ul class="card-list">
+              <li><span><strong>Circuit en série :</strong> U = U₁ + U₂ + …</span></li>
+              <li><span><strong>Circuit en parallèle :</strong> la tension est la même sur chaque branche (U = U₁ = U₂ = …).</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 10. Résistance -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-index">10</span>
+              Résistance électrique R
+            </div>
+            <span class="card-tag">Opposition au courant</span>
+          </div>
+          <div class="card-content">
+            <p>
+              Un résistor (ou récepteur thermique) est un élément du circuit qui :
+            </p>
+            <ul class="card-list">
+              <li><span><strong>Réduit l’intensité</strong> du courant.</span></li>
+              <li><span><strong>Transforme l’énergie électrique</strong> en énergie thermique (chaleur).</span></li>
+            </ul>
+            <p>
+              La résistance <strong>R</strong> est la
+              <strong>constante de proportionnalité</strong> entre la tension U
+              et l’intensité I.
+            </p>
+            <p>Unité : <strong>ohm (Ω)</strong>.</p>
+            <p>
+              Instrument de mesure : <strong>ohmmètre</strong>
+              <span class="card-warning">circuit hors tension</span>
+            </p>
+          </div>
+        </article>
+
+        <!-- 11. Loi d’Ohm -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-index">11</span>
+              Loi d’Ohm
+            </div>
+            <span class="card-tag">Lien U, R, I</span>
+          </div>
+          <div class="card-content">
+            <p>
+              La tension aux bornes d’un résistor est <strong>proportionnelle</strong>
+              à l’intensité du courant qui le traverse :
+            </p>
+            <div class="formula">
+              <span class="label">Loi d’Ohm</span>
+              <span>U = R · I</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 12. Facteurs influençant R -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-index">12</span>
+              Facteurs de résistance d’un fil
+            </div>
+            <span class="card-tag">Géométrie & matériau</span>
+          </div>
+          <div class="card-content">
+            <p>La résistance d’un fil dépend :</p>
+            <ul class="card-list">
+              <li><span>De sa <strong>longueur</strong></span></li>
+              <li><span>De sa <strong>section</strong></span></li>
+              <li><span>De la <strong>nature du matériau</strong></span></li>
+              <li><span>De la <strong>température</strong></span></li>
+            </ul>
+            <p>
+              Si la <strong>section du fil augmente</strong>,
+              la résistance diminue et l’<strong>intensité du courant augmente</strong>.
+            </p>
+          </div>
+        </article>
+
+        <!-- 13. Puissance -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-index">13</span>
+              Puissance électrique P
+            </div>
+            <span class="card-tag">Énergie / temps</span>
+          </div>
+          <div class="card-content">
+            <p>
+              La puissance électrique correspond à l’<strong>énergie consommée par unité de temps</strong>.
+            </p>
+            <div class="formula">
+              <span class="label">Puissance</span>
+              <span>P = U · I</span>
+            </div>
+            <p>
+              Unité : <strong>watt (W)</strong>.
+            </p>
+          </div>
+        </article>
+
+        <!-- 14. Énergie -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-index">14</span>
+              Énergie électrique E
+            </div>
+            <span class="card-tag">Consommation</span>
+          </div>
+          <div class="card-content">
+            <p>
+              L’énergie électrique consommée dépend de la puissance et du temps :
+            </p>
+            <div class="formula">
+              <span class="label">Énergie</span>
+              <span>E = P · t</span>
+            </div>
+            <p>
+              Unité : <strong>joule (J)</strong> ou <strong>kilowattheure (kWh)</strong>.
+            </p>
+          </div>
+        </article>
+
+        <!-- 15. Sécurité & protection -->
+        <article class="card safety-card">
+          <div class="card-header">
+            <div class="card-title">
+              <span class="card-index">15</span>
+              Sécurité & protection
+            </div>
+            <span class="card-tag">Court-circuit & disjoncteurs</span>
+          </div>
+          <div class="card-content">
+            <p>
+              L’électricité peut être <strong>dangereuse</strong> (risque d’électrocution).
+            </p>
+            <p>
+              Un <strong>court-circuit</strong> se produit lorsque le courant passe
+              directement du <strong>+</strong> vers le <strong>−</strong> sans récepteur :
+            </p>
+            <ul class="card-list">
+              <li><span><strong>Très forte intensité</strong></span></li>
+              <li><span><strong>Échauffement important</strong> des conducteurs</span></li>
+            </ul>
+            <p>
+              Les <strong>fusibles</strong> et <strong>disjoncteurs</strong> sont des
+              dispositifs de protection : ils <strong>coupent le courant</strong> si
+              l’intensité devient trop grande.
+            </p>
+          </div>
+        </article>
+
+        <!-- Mémo visuel rapide -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">
+              Mémo rapide
+            </div>
+            <span class="card-tag">À retenir</span>
+          </div>
+          <div class="card-content">
+            <div class="pill-row">
+              <div class="pill accent">I en série : même partout</div>
+              <div class="pill accent">U en parallèle : même partout</div>
+              <div class="pill">U = R · I</div>
+              <div class="pill">P = U · I</div>
+              <div class="pill">E = P · t</div>
+              <div class="pill">Ampèremètre en série</div>
+              <div class="pill">Voltmètre en parallèle</div>
+              <div class="pill">Circuit fermé pour que le courant passe</div>
+            </div>
+        </article>
+<!-- FORMULES ESSENTIELLES -->
+<article class="card">
+  <div class="card-header">
+    <div class="card-title">
+      <span class="card-index">F</span>
+      Formules essentielles
+    </div>
+    <span class="card-tag">Récapitulatif</span>
+  </div>
+
+  <div class="card-content">
+
+    <div class="formula">
+      <span class="label">Intensité</span>
+      I = q / t
+    </div>
+
+    <div class="formula">
+      <span class="label">Tension</span>
+      U = E / q
+    </div>
+
+    <div class="formula">
+      <span class="label">Loi d’Ohm</span>
+      U = R · I
+    </div>
+
+    <div class="formula">
+      <span class="label">Résistance d’un fil</span>
+      R = ρ · L / S
+    </div>
+
+    <div class="formula">
+      <span class="label">Puissance (énergie)</span>
+      P = E / t
+    </div>
+
+    <div class="formula">
+      <span class="label">Puissance (électrique)</span>
+      P = U · I
+    </div>
+
+  </div> <!-- ✔ fermeture card-content -->
+</article> <!-- ✔ fermeture article -->
+
+    <!-- ========================= -->
+<!--   TEST BLANC – BLOC      -->
+<!-- ========================= -->
+<article class="card" id="test-blanc">
+  <div class="card-header">
+    <div class="card-title">
+      <span class="card-index">TB</span>
+      Test Blanc – Électricité
+    </div>
+    <span class="card-tag">Exercices</span>
+  </div>
+
+  <div class="card-content">
+
+    <!-- Exercice 1 -->
+    <h3 style="margin-bottom:6px; color:var(--accent-strong);">Exercice 1</h3>
+    <p>Une lampe est traversée par un courant de <strong>2 A</strong> et une tension de <strong>24 V</strong>.</p>
+    <p>1) Résistance R = ?</p>
+    <input class="quiz-input" id="q1" placeholder="Réponse en ohms">
+
+    <p>2)  Puissance P = ?</p>
+    <input class="quiz-input" id="q2" placeholder="Réponse en watts">
+
+    <!-- Exercice 2 -->
+    <h3 style="margin-top:12px; margin-bottom:6px; color:var(--accent-strong);">Exercice 2</h3>
+    <p>Une lampe a une puissance de <strong>70 W</strong> et un courant de <strong>2 A</strong>.</p>
+    <p>1) Tension U = ?</p>
+    <input class="quiz-input" id="q3" placeholder="Réponse en volts">
+
+    <p>2) Résistance R = ?</p>
+    <input class="quiz-input" id="q4" placeholder="Réponse en ohms (Mettre virgule en .)">
+
+    <!-- Exercice 3 -->
+    <h3 style="margin-top:12px; margin-bottom:6px; color:var(--accent-strong);">Exercice 3</h3>
+    <p>Fer à repasser : <strong>U = 220 V</strong>, <strong>P = 880 W</strong>.</p>
+    <p>1) Intensité I = ?</p>
+    <input class="quiz-input" id="q5" placeholder="Réponse en ampères">
+
+    <p>2) Énergie consommée en 1h30 (Wh) = ?</p>
+    <input class="quiz-input" id="q6" placeholder="Réponse en Wh">
+
+    <!-- Exercice 4 -->
+    <h3 style="margin-top:12px; margin-bottom:6px; color:var(--accent-strong);">Exercice 4</h3>
+    <p>Fer à repasser : <strong>1100 W</strong>, <strong>220 V</strong>.</p>
+    <p>1) Intensité I = ?</p>
+    <input class="quiz-input" id="q7" placeholder="Réponse en ampères">
+
+    <p>2) Résistance R = ?</p>
+    <input class="quiz-input" id="q8" placeholder="Réponse en ohms">
+
+    <p>3) Énergie consommée en 30 min (Wh) = ?</p>
+    <input class="quiz-input" id="q9" placeholder="Réponse en Wh">
+
+    <button id="checkQuiz" class="quiz-btn">Vérifier mes réponses</button>
+
+    <div id="quizResult" class="quiz-result"></div>
+
+  </div>
+</article>
+
+  </div>
+</article>
+ 
+
+  </div>
+</article>
+</article>
+
+  </div>
+</article>
+
+  </div>
+  
+</article>
+          </div>
+        </article>
+      </div>
+    </section>
+      <section class="summary-banner">
+  <div class="summary-tagline">Suggestions & corrections :</div>
+  <p>
+    Si vous remarquez la moindre erreur ou imprécision dans cette fiche, 
+    merci de la noter ci-dessous afin que je puisse la corriger.
+  </p>
+  <form id="suggestion-form">
+    <iframe src="https://forms.gle/TB9JKxcoPdGkVRw47" width="100%" height="400" frameborder="0">Chargement…</iframe>
+  </form>
+  <div id="suggestion-message" style="display:none; margin-top:12px; padding:12px; border-radius:12px; background:rgba(76,255,155,0.2); color:var(--text-main); font-weight:600;">
+    Merci pour votre suggestion ! Elle sera corrigée rapidement.
+  </div>
+</section>
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>À propos</h3>
+            <p>
+                Ce site a été conçu pour offrir des explications claires et accessibles 
+                en sciences. Vos retours permettent de l’améliorer continuellement.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="electricite.html">Électricité</a></li>
+                <li><a href="photosyn.html">Photosynthèse</a></li>
+                <li><a href="suggestions.html">Suggestions</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Une erreur ? Une idée ?</p>
+            <p><a href="suggestions.html" class="footer-btn">Envoyer une suggestion</a></p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 — Site éducatif • Fait par Andrew
+    </div>
+</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
